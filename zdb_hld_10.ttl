@@ -1,0 +1,301 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix daia: <http://purl.org/ontology/daia/> .
+@prefix holding: <http://purl.org/ontology/holding#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix ecpo: <http://purl.org/ontology/ecpo#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://example.org/241687039>
+  a frbr:Item ;
+  daia:availableFor [
+    a holding:Presentation ;
+    gr:availableAtOrFrom [
+      a gr:Location ;
+      org:siteOf <http://ld.zdb-services.de/resource/organisations/DE-Mar1>
+    ] ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-Mar1>
+  ], [
+    a holding:Loan ;
+    gr:hasStockKeepingUnit "X" ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-Mar1>
+  ], [
+    a holding:Interloan ;
+    gr:hasStockKeepingUnit "X" ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-Mar1>
+  ] ;
+  ecpo:hasChronology [
+    a ecpo:Chronology ;
+    dc:coverage "10.[1969]" ;
+    dct:hasPart [
+      a ecpo:Chronology ;
+      ecpo:hasBeginTemporal "1969"^^xsd:gYear ;
+      ecpo:hasBeginVolumeNumbering "10"
+    ]
+  ] ;
+  holding:exemplarOf <http://ld.zdb-services.de/resource/2676949-9> ;
+  holding:heldby <http://ld.zdb-services.de/resource/organisations/DE-Mar1> ;
+  holding:label "X" .
+
+<http://example.org/241687527>
+  a frbr:Item ;
+  daia:availableFor [
+    a holding:Presentation ;
+    gr:availableAtOrFrom [
+      a gr:Location ;
+      org:siteOf <http://ld.zdb-services.de/resource/organisations/DE-24>
+    ] ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-24>
+  ], [
+    a holding:Loan ;
+    gr:hasStockKeepingUnit "Gew.oct.K.725" ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-24>
+  ], [
+    a holding:Interloan ;
+    gr:hasStockKeepingUnit "Gew.oct.K.725" ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-24>
+  ] ;
+  ecpo:hasChronology [
+    a ecpo:Chronology ;
+    dc:coverage "1912(1914); 1922(1924); 1924(1926); 1926(1927)" ;
+    dct:hasPart [
+      a ecpo:Chronology ;
+      ecpo:hasBeginTemporal "1912"^^xsd:gYear
+    ], [
+      a ecpo:Chronology ;
+      ecpo:hasBeginTemporal "1922"^^xsd:gYear
+    ], [
+      a ecpo:Chronology ;
+      ecpo:hasBeginTemporal "1924"^^xsd:gYear
+    ], [
+      a ecpo:Chronology ;
+      ecpo:hasBeginTemporal "1926"^^xsd:gYear
+    ]
+  ] ;
+  holding:exemplarOf <http://ld.zdb-services.de/resource/2676952-9> ;
+  holding:heldby <http://ld.zdb-services.de/resource/organisations/DE-24> ;
+  holding:label "Gew.oct.K.725" .
+
+<http://example.org/241687705>
+  a frbr:Item ;
+  daia:availableFor [
+    a holding:Presentation ;
+    gr:availableAtOrFrom [
+      a gr:Location ;
+      org:siteOf <http://ld.zdb-services.de/resource/organisations/DE-24>
+    ] ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-24>
+  ], [
+    a holding:Loan ;
+    gr:hasStockKeepingUnit "Gew.oct.K.731" ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-24>
+  ], [
+    a holding:Interloan ;
+    gr:hasStockKeepingUnit "Gew.oct.K.731" ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-24>
+  ] ;
+  ecpo:hasChronology [
+    a ecpo:Chronology ;
+    dc:coverage "1923(1925); 1925(1927); 1927(1929)" ;
+    dct:hasPart [
+      a ecpo:Chronology ;
+      ecpo:hasBeginTemporal "1923"^^xsd:gYear
+    ], [
+      a ecpo:Chronology ;
+      ecpo:hasBeginTemporal "1925"^^xsd:gYear
+    ], [
+      a ecpo:Chronology ;
+      ecpo:hasBeginTemporal "1927"^^xsd:gYear
+    ]
+  ] ;
+  holding:exemplarOf <http://ld.zdb-services.de/resource/2676954-2> ;
+  holding:heldby <http://ld.zdb-services.de/resource/organisations/DE-24> ;
+  holding:label "Gew.oct.K.731" .
+
+<http://example.org/241689597>
+  a frbr:Item ;
+  daia:availableFor [
+    a holding:Presentation ;
+    gr:availableAtOrFrom [
+      a gr:Location ;
+      org:siteOf <http://ld.zdb-services.de/resource/organisations/DE-61>
+    ] ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
+  ], [
+    a holding:Loan ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
+  ], [
+    a holding:Interloan ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
+  ] ;
+  ecpo:hasChronology [
+    a ecpo:Chronology ;
+    dc:coverage "1884/85(1885); 1886/87(1887) - 1889/90(1890)"
+  ] ;
+  holding:exemplarOf <http://ld.zdb-services.de/resource/2676966-9> ;
+  holding:heldby <http://ld.zdb-services.de/resource/organisations/DE-61> .
+
+<http://example.org/241689767>
+  a frbr:Item ;
+  daia:availableFor [
+    a holding:Presentation ;
+    gr:availableAtOrFrom [
+      a gr:Location ;
+      org:siteOf <http://ld.zdb-services.de/resource/organisations/DE-61>
+    ] ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
+  ], [
+    a holding:Loan ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
+  ], [
+    a holding:Interloan ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
+  ] ;
+  ecpo:hasChronology [
+    a ecpo:Chronology ;
+    dc:coverage "1890/91(1891) - 1891/92(1892); 1893/94(1894) - 1898/99(1899)"
+  ] ;
+  holding:exemplarOf <http://ld.zdb-services.de/resource/2676969-4> ;
+  holding:heldby <http://ld.zdb-services.de/resource/organisations/DE-61> .
+
+<http://example.org/241689856>
+  a frbr:Item ;
+  daia:availableFor [
+    a holding:Presentation ;
+    gr:availableAtOrFrom [
+      a gr:Location ;
+      org:siteOf <http://ld.zdb-services.de/resource/organisations/DE-61>
+    ] ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
+  ], [
+    a holding:Loan ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
+  ], [
+    a holding:Interloan ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
+  ] ;
+  ecpo:hasChronology [
+    a ecpo:Chronology ;
+    dc:coverage "1899/1900(1900) - 1900/01(1901)"
+  ] ;
+  holding:exemplarOf <http://ld.zdb-services.de/resource/2676970-0> ;
+  holding:heldby <http://ld.zdb-services.de/resource/organisations/DE-61> .
+
+<http://example.org/241689953>
+  a frbr:Item ;
+  daia:availableFor [
+    a holding:Presentation ;
+    gr:availableAtOrFrom [
+      a gr:Location ;
+      org:siteOf <http://ld.zdb-services.de/resource/organisations/DE-61>
+    ] ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
+  ], [
+    a holding:Loan ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
+  ], [
+    a holding:Interloan ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
+  ] ;
+  ecpo:hasChronology [
+    a ecpo:Chronology ;
+    dc:coverage " #1#1901/02(1902)"
+  ] ;
+  holding:exemplarOf <http://ld.zdb-services.de/resource/2676972-4> ;
+  holding:heldby <http://ld.zdb-services.de/resource/organisations/DE-61> .
+
+<http://example.org/241691052>
+  a frbr:Item ;
+  daia:availableFor [
+    a holding:Presentation ;
+    gr:availableAtOrFrom [
+      a gr:Location ;
+      gr:name "HB" ;
+      org:siteOf <http://ld.zdb-services.de/resource/organisations/DE-15>
+    ] ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-15>
+  ], [
+    a holding:Loan ;
+    gr:hasStockKeepingUnit "54-4-1001:502" ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-15>
+  ], [
+    a holding:Interloan ;
+    gr:hasStockKeepingUnit "54-4-1001:502" ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-15>
+  ] ;
+  ecpo:hasChronology [
+    a ecpo:Chronology ;
+    dc:coverage "[1908]" ;
+    dct:hasPart [
+      a ecpo:Chronology ;
+      ecpo:hasBeginTemporal "1908"^^xsd:gYear
+    ]
+  ] ;
+  holding:exemplarOf <http://ld.zdb-services.de/resource/2676978-5> ;
+  holding:heldby <http://ld.zdb-services.de/resource/organisations/DE-15> ;
+  holding:label "54-4-1001:502" .
+
+<http://example.org/24169115X>
+  a frbr:Item ;
+  daia:availableFor [
+    a holding:Presentation ;
+    gr:availableAtOrFrom [
+      a gr:Location ;
+      org:siteOf <http://ld.zdb-services.de/resource/organisations/DE-31>
+    ] ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-31>
+  ], [
+    a holding:Loan ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-31>
+  ], [
+    a holding:Interloan ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-31>
+  ] ;
+  ecpo:hasChronology [
+    a ecpo:Chronology ;
+    dc:coverage "28.1911,1 (S.1-8)" ;
+    dct:description "Desiderat: [N=1-33]"
+  ] ;
+  ecpo:hasChronologyGap [
+    a ecpo:Chronology ;
+    dc:coverage "Desiderat: [N=1-33]"
+  ] ;
+  holding:exemplarOf <http://ld.zdb-services.de/resource/2676980-3> ;
+  holding:heldby <http://ld.zdb-services.de/resource/organisations/DE-31> ;
+  rdfs:comment "Sammelband \"Zu Kaspar Hauser\"; Einzelnachweis <O51 B 102,1>", "Desiderat: [N=1-33]" .
+
+<http://example.org/608848034>
+  a frbr:Item ;
+  daia:availableFor [
+    a holding:Presentation ;
+    gr:availableAtOrFrom [
+      a gr:Location ;
+      org:siteOf <http://ld.zdb-services.de/resource/organisations/DE-101a>
+    ] ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-101a>
+  ], [
+    a holding:Loan ;
+    gr:hasStockKeepingUnit "DMTZ 261" ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-101a>
+  ], [
+    a holding:Interloan ;
+    gr:hasStockKeepingUnit "DMTZ 261" ;
+    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-101a>
+  ] ;
+  ecpo:hasChronology [
+    a ecpo:Chronology ;
+    dc:coverage "1992 - 1997" ;
+    dct:hasPart [
+      a ecpo:Chronology ;
+      ecpo:hasBeginTemporal "1992"^^xsd:gYear ;
+      ecpo:hasEndTemporal "1997"^^xsd:gYear
+    ]
+  ] ;
+  holding:exemplarOf <http://ld.zdb-services.de/resource/2676982-7> ;
+  holding:heldby <http://ld.zdb-services.de/resource/organisations/DE-101a> ;
+  holding:label "DMTZ 261" ;
+  rdfs:comment "Mikrofilm-Ausg." .
+
