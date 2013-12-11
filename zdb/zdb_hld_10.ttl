@@ -1,31 +1,35 @@
 @prefix frbr: <http://purl.org/vocab/frbr/core#> .
 @prefix daia: <http://purl.org/ontology/daia/> .
-@prefix holding: <http://purl.org/ontology/holding#> .
+@prefix dso: <http://purl.org/ontology/dso#> .
 @prefix gr: <http://purl.org/goodrelations/v1#> .
 @prefix org: <http://www.w3.org/ns/org#> .
+@prefix service: <http://purl.org/ontology/service#> .
+@prefix isil: <http://metadataregistry.org/uri/schema/isil/> .
 @prefix ecpo: <http://purl.org/ontology/ecpo#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix holding: <http://purl.org/ontology/holding#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <http://example.org/241687039>
   a frbr:Item ;
   daia:availableFor [
-    a holding:Presentation ;
+    a dso:Presentation ;
     gr:availableAtOrFrom [
       a gr:Location ;
       org:siteOf <http://ld.zdb-services.de/resource/organisations/DE-Mar1>
     ] ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-Mar1>
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-Mar1>
   ], [
-    a holding:Loan ;
+    a dso:Loan ;
     gr:hasStockKeepingUnit "X" ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-Mar1>
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-Mar1>
   ], [
-    a holding:Interloan ;
+    a dso:Interloan ;
+    isil:hasIllStatus <http://metadataregistry.org/uri/illcode/b> ;
     gr:hasStockKeepingUnit "X" ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-Mar1>
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-Mar1>
   ] ;
   ecpo:hasChronology [
     a ecpo:Chronology ;
@@ -43,20 +47,21 @@
 <http://example.org/241687527>
   a frbr:Item ;
   daia:availableFor [
-    a holding:Presentation ;
+    a dso:Presentation ;
     gr:availableAtOrFrom [
       a gr:Location ;
       org:siteOf <http://ld.zdb-services.de/resource/organisations/DE-24>
     ] ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-24>
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-24>
   ], [
-    a holding:Loan ;
+    a dso:Loan ;
     gr:hasStockKeepingUnit "Gew.oct.K.725" ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-24>
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-24>
   ], [
-    a holding:Interloan ;
+    a dso:Interloan ;
+    isil:hasIllStatus <http://metadataregistry.org/uri/illcode/c> ;
     gr:hasStockKeepingUnit "Gew.oct.K.725" ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-24>
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-24>
   ] ;
   ecpo:hasChronology [
     a ecpo:Chronology ;
@@ -82,20 +87,21 @@
 <http://example.org/241687705>
   a frbr:Item ;
   daia:availableFor [
-    a holding:Presentation ;
+    a dso:Presentation ;
     gr:availableAtOrFrom [
       a gr:Location ;
       org:siteOf <http://ld.zdb-services.de/resource/organisations/DE-24>
     ] ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-24>
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-24>
   ], [
-    a holding:Loan ;
+    a dso:Loan ;
     gr:hasStockKeepingUnit "Gew.oct.K.731" ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-24>
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-24>
   ], [
-    a holding:Interloan ;
+    a dso:Interloan ;
+    isil:hasIllStatus <http://metadataregistry.org/uri/illcode/c> ;
     gr:hasStockKeepingUnit "Gew.oct.K.731" ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-24>
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-24>
   ] ;
   ecpo:hasChronology [
     a ecpo:Chronology ;
@@ -118,18 +124,19 @@
 <http://example.org/241689597>
   a frbr:Item ;
   daia:availableFor [
-    a holding:Presentation ;
+    a dso:Presentation ;
     gr:availableAtOrFrom [
       a gr:Location ;
       org:siteOf <http://ld.zdb-services.de/resource/organisations/DE-61>
     ] ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
   ], [
-    a holding:Loan ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
+    a dso:Loan ;
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
   ], [
-    a holding:Interloan ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
+    a dso:Interloan ;
+    isil:hasIllStatus <http://metadataregistry.org/uri/illcode/b> ;
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
   ] ;
   ecpo:hasChronology [
     a ecpo:Chronology ;
@@ -141,18 +148,19 @@
 <http://example.org/241689767>
   a frbr:Item ;
   daia:availableFor [
-    a holding:Presentation ;
+    a dso:Presentation ;
     gr:availableAtOrFrom [
       a gr:Location ;
       org:siteOf <http://ld.zdb-services.de/resource/organisations/DE-61>
     ] ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
   ], [
-    a holding:Loan ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
+    a dso:Loan ;
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
   ], [
-    a holding:Interloan ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
+    a dso:Interloan ;
+    isil:hasIllStatus <http://metadataregistry.org/uri/illcode/b> ;
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
   ] ;
   ecpo:hasChronology [
     a ecpo:Chronology ;
@@ -164,18 +172,19 @@
 <http://example.org/241689856>
   a frbr:Item ;
   daia:availableFor [
-    a holding:Presentation ;
+    a dso:Presentation ;
     gr:availableAtOrFrom [
       a gr:Location ;
       org:siteOf <http://ld.zdb-services.de/resource/organisations/DE-61>
     ] ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
   ], [
-    a holding:Loan ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
+    a dso:Loan ;
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
   ], [
-    a holding:Interloan ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
+    a dso:Interloan ;
+    isil:hasIllStatus <http://metadataregistry.org/uri/illcode/b> ;
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
   ] ;
   ecpo:hasChronology [
     a ecpo:Chronology ;
@@ -187,22 +196,23 @@
 <http://example.org/241689953>
   a frbr:Item ;
   daia:availableFor [
-    a holding:Presentation ;
+    a dso:Presentation ;
     gr:availableAtOrFrom [
       a gr:Location ;
       org:siteOf <http://ld.zdb-services.de/resource/organisations/DE-61>
     ] ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
   ], [
-    a holding:Loan ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
+    a dso:Loan ;
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
   ], [
-    a holding:Interloan ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
+    a dso:Interloan ;
+    isil:hasIllStatus <http://metadataregistry.org/uri/illcode/b> ;
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-61>
   ] ;
   ecpo:hasChronology [
     a ecpo:Chronology ;
-    dc:coverage " #1#1901/02(1902)"
+    dc:coverage "#1#1901/02(1902)"
   ] ;
   holding:exemplarOf <http://ld.zdb-services.de/resource/2676972-4> ;
   holding:heldby <http://ld.zdb-services.de/resource/organisations/DE-61> .
@@ -210,21 +220,22 @@
 <http://example.org/241691052>
   a frbr:Item ;
   daia:availableFor [
-    a holding:Presentation ;
+    a dso:Presentation ;
     gr:availableAtOrFrom [
       a gr:Location ;
       gr:name "HB" ;
       org:siteOf <http://ld.zdb-services.de/resource/organisations/DE-15>
     ] ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-15>
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-15>
   ], [
-    a holding:Loan ;
+    a dso:Loan ;
     gr:hasStockKeepingUnit "54-4-1001:502" ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-15>
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-15>
   ], [
-    a holding:Interloan ;
+    a dso:Interloan ;
+    isil:hasIllStatus <http://metadataregistry.org/uri/illcode/b> ;
     gr:hasStockKeepingUnit "54-4-1001:502" ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-15>
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-15>
   ] ;
   ecpo:hasChronology [
     a ecpo:Chronology ;
@@ -241,23 +252,23 @@
 <http://example.org/24169115X>
   a frbr:Item ;
   daia:availableFor [
-    a holding:Presentation ;
+    a dso:Presentation ;
     gr:availableAtOrFrom [
       a gr:Location ;
       org:siteOf <http://ld.zdb-services.de/resource/organisations/DE-31>
     ] ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-31>
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-31>
   ], [
-    a holding:Loan ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-31>
+    a dso:Loan ;
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-31>
   ], [
-    a holding:Interloan ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-31>
+    a dso:Interloan ;
+    isil:hasIllStatus <http://metadataregistry.org/uri/illcode/c> ;
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-31>
   ] ;
   ecpo:hasChronology [
     a ecpo:Chronology ;
-    dc:coverage "28.1911,1 (S.1-8)" ;
-    dct:description "Desiderat: [N=1-33]"
+    dc:coverage "28.1911,1 (S.1-8)"
   ] ;
   ecpo:hasChronologyGap [
     a ecpo:Chronology ;
@@ -270,20 +281,21 @@
 <http://example.org/608848034>
   a frbr:Item ;
   daia:availableFor [
-    a holding:Presentation ;
+    a dso:Presentation ;
     gr:availableAtOrFrom [
       a gr:Location ;
       org:siteOf <http://ld.zdb-services.de/resource/organisations/DE-101a>
     ] ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-101a>
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-101a>
   ], [
-    a holding:Loan ;
+    a dso:Loan ;
     gr:hasStockKeepingUnit "DMTZ 261" ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-101a>
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-101a>
   ], [
-    a holding:Interloan ;
+    a dso:Interloan ;
+    isil:hasIllStatus <http://metadataregistry.org/uri/illcode/b> ;
     gr:hasStockKeepingUnit "DMTZ 261" ;
-    daia:providedBy <http://ld.zdb-services.de/resource/organisations/DE-101a>
+    service:providedBy <http://ld.zdb-services.de/resource/organisations/DE-101a>
   ] ;
   ecpo:hasChronology [
     a ecpo:Chronology ;

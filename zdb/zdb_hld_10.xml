@@ -2,39 +2,43 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:frbr="http://purl.org/vocab/frbr/core#"
          xmlns:daia="http://purl.org/ontology/daia/"
-         xmlns:holding="http://purl.org/ontology/holding#"
+         xmlns:dso="http://purl.org/ontology/dso#"
          xmlns:gr="http://purl.org/goodrelations/v1#"
          xmlns:org="http://www.w3.org/ns/org#"
+         xmlns:service="http://purl.org/ontology/service#"
+         xmlns:isil="http://metadataregistry.org/uri/schema/isil/"
          xmlns:ecpo="http://purl.org/ontology/ecpo#"
          xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:holding="http://purl.org/ontology/holding#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 
   <frbr:Item rdf:about="http://example.org/241687039">
     <daia:availableFor>
-      <holding:Presentation>
+      <dso:Presentation>
         <gr:availableAtOrFrom>
           <gr:Location>
             <org:siteOf rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-Mar1"/>
           </gr:Location>
         </gr:availableAtOrFrom>
 
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-Mar1"/>
-      </holding:Presentation>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-Mar1"/>
+      </dso:Presentation>
     </daia:availableFor>
 
     <daia:availableFor>
-      <holding:Loan>
+      <dso:Loan>
         <gr:hasStockKeepingUnit>X</gr:hasStockKeepingUnit>
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-Mar1"/>
-      </holding:Loan>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-Mar1"/>
+      </dso:Loan>
     </daia:availableFor>
 
     <daia:availableFor>
-      <holding:Interloan>
+      <dso:Interloan>
+        <isil:hasIllStatus rdf:resource="http://metadataregistry.org/uri/illcode/b"/>
         <gr:hasStockKeepingUnit>X</gr:hasStockKeepingUnit>
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-Mar1"/>
-      </holding:Interloan>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-Mar1"/>
+      </dso:Interloan>
     </daia:availableFor>
 
     <ecpo:hasChronology>
@@ -57,29 +61,30 @@
 
   <frbr:Item rdf:about="http://example.org/241687527">
     <daia:availableFor>
-      <holding:Presentation>
+      <dso:Presentation>
         <gr:availableAtOrFrom>
           <gr:Location>
             <org:siteOf rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-24"/>
           </gr:Location>
         </gr:availableAtOrFrom>
 
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-24"/>
-      </holding:Presentation>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-24"/>
+      </dso:Presentation>
     </daia:availableFor>
 
     <daia:availableFor>
-      <holding:Loan>
+      <dso:Loan>
         <gr:hasStockKeepingUnit>Gew.oct.K.725</gr:hasStockKeepingUnit>
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-24"/>
-      </holding:Loan>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-24"/>
+      </dso:Loan>
     </daia:availableFor>
 
     <daia:availableFor>
-      <holding:Interloan>
+      <dso:Interloan>
+        <isil:hasIllStatus rdf:resource="http://metadataregistry.org/uri/illcode/c"/>
         <gr:hasStockKeepingUnit>Gew.oct.K.725</gr:hasStockKeepingUnit>
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-24"/>
-      </holding:Interloan>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-24"/>
+      </dso:Interloan>
     </daia:availableFor>
 
     <ecpo:hasChronology>
@@ -119,29 +124,30 @@
 
   <frbr:Item rdf:about="http://example.org/241687705">
     <daia:availableFor>
-      <holding:Presentation>
+      <dso:Presentation>
         <gr:availableAtOrFrom>
           <gr:Location>
             <org:siteOf rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-24"/>
           </gr:Location>
         </gr:availableAtOrFrom>
 
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-24"/>
-      </holding:Presentation>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-24"/>
+      </dso:Presentation>
     </daia:availableFor>
 
     <daia:availableFor>
-      <holding:Loan>
+      <dso:Loan>
         <gr:hasStockKeepingUnit>Gew.oct.K.731</gr:hasStockKeepingUnit>
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-24"/>
-      </holding:Loan>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-24"/>
+      </dso:Loan>
     </daia:availableFor>
 
     <daia:availableFor>
-      <holding:Interloan>
+      <dso:Interloan>
+        <isil:hasIllStatus rdf:resource="http://metadataregistry.org/uri/illcode/c"/>
         <gr:hasStockKeepingUnit>Gew.oct.K.731</gr:hasStockKeepingUnit>
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-24"/>
-      </holding:Interloan>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-24"/>
+      </dso:Interloan>
     </daia:availableFor>
 
     <ecpo:hasChronology>
@@ -175,27 +181,28 @@
 
   <frbr:Item rdf:about="http://example.org/241689597">
     <daia:availableFor>
-      <holding:Presentation>
+      <dso:Presentation>
         <gr:availableAtOrFrom>
           <gr:Location>
             <org:siteOf rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
           </gr:Location>
         </gr:availableAtOrFrom>
 
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
-      </holding:Presentation>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
+      </dso:Presentation>
     </daia:availableFor>
 
     <daia:availableFor>
-      <holding:Loan>
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
-      </holding:Loan>
+      <dso:Loan>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
+      </dso:Loan>
     </daia:availableFor>
 
     <daia:availableFor>
-      <holding:Interloan>
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
-      </holding:Interloan>
+      <dso:Interloan>
+        <isil:hasIllStatus rdf:resource="http://metadataregistry.org/uri/illcode/b"/>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
+      </dso:Interloan>
     </daia:availableFor>
 
     <ecpo:hasChronology>
@@ -210,27 +217,28 @@
 
   <frbr:Item rdf:about="http://example.org/241689767">
     <daia:availableFor>
-      <holding:Presentation>
+      <dso:Presentation>
         <gr:availableAtOrFrom>
           <gr:Location>
             <org:siteOf rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
           </gr:Location>
         </gr:availableAtOrFrom>
 
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
-      </holding:Presentation>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
+      </dso:Presentation>
     </daia:availableFor>
 
     <daia:availableFor>
-      <holding:Loan>
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
-      </holding:Loan>
+      <dso:Loan>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
+      </dso:Loan>
     </daia:availableFor>
 
     <daia:availableFor>
-      <holding:Interloan>
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
-      </holding:Interloan>
+      <dso:Interloan>
+        <isil:hasIllStatus rdf:resource="http://metadataregistry.org/uri/illcode/b"/>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
+      </dso:Interloan>
     </daia:availableFor>
 
     <ecpo:hasChronology>
@@ -245,27 +253,28 @@
 
   <frbr:Item rdf:about="http://example.org/241689856">
     <daia:availableFor>
-      <holding:Presentation>
+      <dso:Presentation>
         <gr:availableAtOrFrom>
           <gr:Location>
             <org:siteOf rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
           </gr:Location>
         </gr:availableAtOrFrom>
 
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
-      </holding:Presentation>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
+      </dso:Presentation>
     </daia:availableFor>
 
     <daia:availableFor>
-      <holding:Loan>
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
-      </holding:Loan>
+      <dso:Loan>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
+      </dso:Loan>
     </daia:availableFor>
 
     <daia:availableFor>
-      <holding:Interloan>
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
-      </holding:Interloan>
+      <dso:Interloan>
+        <isil:hasIllStatus rdf:resource="http://metadataregistry.org/uri/illcode/b"/>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
+      </dso:Interloan>
     </daia:availableFor>
 
     <ecpo:hasChronology>
@@ -280,32 +289,33 @@
 
   <frbr:Item rdf:about="http://example.org/241689953">
     <daia:availableFor>
-      <holding:Presentation>
+      <dso:Presentation>
         <gr:availableAtOrFrom>
           <gr:Location>
             <org:siteOf rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
           </gr:Location>
         </gr:availableAtOrFrom>
 
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
-      </holding:Presentation>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
+      </dso:Presentation>
     </daia:availableFor>
 
     <daia:availableFor>
-      <holding:Loan>
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
-      </holding:Loan>
+      <dso:Loan>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
+      </dso:Loan>
     </daia:availableFor>
 
     <daia:availableFor>
-      <holding:Interloan>
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
-      </holding:Interloan>
+      <dso:Interloan>
+        <isil:hasIllStatus rdf:resource="http://metadataregistry.org/uri/illcode/b"/>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-61"/>
+      </dso:Interloan>
     </daia:availableFor>
 
     <ecpo:hasChronology>
       <ecpo:Chronology>
-        <dc:coverage> #1#1901/02(1902)</dc:coverage>
+        <dc:coverage>#1#1901/02(1902)</dc:coverage>
       </ecpo:Chronology>
     </ecpo:hasChronology>
 
@@ -315,7 +325,7 @@
 
   <frbr:Item rdf:about="http://example.org/241691052">
     <daia:availableFor>
-      <holding:Presentation>
+      <dso:Presentation>
         <gr:availableAtOrFrom>
           <gr:Location>
             <gr:name>HB</gr:name>
@@ -323,22 +333,23 @@
           </gr:Location>
         </gr:availableAtOrFrom>
 
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-15"/>
-      </holding:Presentation>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-15"/>
+      </dso:Presentation>
     </daia:availableFor>
 
     <daia:availableFor>
-      <holding:Loan>
+      <dso:Loan>
         <gr:hasStockKeepingUnit>54-4-1001:502</gr:hasStockKeepingUnit>
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-15"/>
-      </holding:Loan>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-15"/>
+      </dso:Loan>
     </daia:availableFor>
 
     <daia:availableFor>
-      <holding:Interloan>
+      <dso:Interloan>
+        <isil:hasIllStatus rdf:resource="http://metadataregistry.org/uri/illcode/b"/>
         <gr:hasStockKeepingUnit>54-4-1001:502</gr:hasStockKeepingUnit>
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-15"/>
-      </holding:Interloan>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-15"/>
+      </dso:Interloan>
     </daia:availableFor>
 
     <ecpo:hasChronology>
@@ -360,33 +371,33 @@
 
   <frbr:Item rdf:about="http://example.org/24169115X">
     <daia:availableFor>
-      <holding:Presentation>
+      <dso:Presentation>
         <gr:availableAtOrFrom>
           <gr:Location>
             <org:siteOf rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-31"/>
           </gr:Location>
         </gr:availableAtOrFrom>
 
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-31"/>
-      </holding:Presentation>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-31"/>
+      </dso:Presentation>
     </daia:availableFor>
 
     <daia:availableFor>
-      <holding:Loan>
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-31"/>
-      </holding:Loan>
+      <dso:Loan>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-31"/>
+      </dso:Loan>
     </daia:availableFor>
 
     <daia:availableFor>
-      <holding:Interloan>
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-31"/>
-      </holding:Interloan>
+      <dso:Interloan>
+        <isil:hasIllStatus rdf:resource="http://metadataregistry.org/uri/illcode/c"/>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-31"/>
+      </dso:Interloan>
     </daia:availableFor>
 
     <ecpo:hasChronology>
       <ecpo:Chronology>
         <dc:coverage>28.1911,1 (S.1-8)</dc:coverage>
-        <dct:description>Desiderat: [N=1-33]</dct:description>
       </ecpo:Chronology>
     </ecpo:hasChronology>
 
@@ -404,29 +415,30 @@
 
   <frbr:Item rdf:about="http://example.org/608848034">
     <daia:availableFor>
-      <holding:Presentation>
+      <dso:Presentation>
         <gr:availableAtOrFrom>
           <gr:Location>
             <org:siteOf rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-101a"/>
           </gr:Location>
         </gr:availableAtOrFrom>
 
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-101a"/>
-      </holding:Presentation>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-101a"/>
+      </dso:Presentation>
     </daia:availableFor>
 
     <daia:availableFor>
-      <holding:Loan>
+      <dso:Loan>
         <gr:hasStockKeepingUnit>DMTZ 261</gr:hasStockKeepingUnit>
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-101a"/>
-      </holding:Loan>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-101a"/>
+      </dso:Loan>
     </daia:availableFor>
 
     <daia:availableFor>
-      <holding:Interloan>
+      <dso:Interloan>
+        <isil:hasIllStatus rdf:resource="http://metadataregistry.org/uri/illcode/b"/>
         <gr:hasStockKeepingUnit>DMTZ 261</gr:hasStockKeepingUnit>
-        <daia:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-101a"/>
-      </holding:Interloan>
+        <service:providedBy rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-101a"/>
+      </dso:Interloan>
     </daia:availableFor>
 
     <ecpo:hasChronology>
